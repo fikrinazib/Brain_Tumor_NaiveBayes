@@ -35,31 +35,31 @@ classifier.fit(X_train, Y_train)
 st.title("Brain Tumor Detection")
 col1, col2, col3 = st.columns(3)
 with col1:
-    Mean = st.text_input("Input Nilai Mean")
+    Mean = st.text_input("Input Nilai Mean",0)
 with col2:
-    Variance = st.text_input("Input Nilai Variance")
+    Variance = st.text_input("Input Nilai Variance",0)
 with col3:
-    Standard_Deviation = st.text_input("Input Nilai Standard Deviation")
+    Standard_Deviation = st.text_input("Input Nilai Standard Deviation",0)
 with col1:
-    Entropy = st.text_input("Input Nilai Entropy")
+    Entropy = st.text_input("Input Nilai Entropy",0)
 with col2:
-    Skewness = st.text_input("Input Nilai Skewness")
+    Skewness = st.text_input("Input Nilai Skewness",0)
 with col3:
-    Kurtosis = st.text_input("Input Nilai Kurtosis")
+    Kurtosis = st.text_input("Input Nilai Kurtosis",0)
 with col1:
-    Contrast = st.text_input("Input Nilai Contrast")
+    Contrast = st.text_input("Input Nilai Contrast",0)
 with col2:
-    Energy = st.text_input("Input Nilai Energy")
+    Energy = st.text_input("Input Nilai Energy",0)
 with col3:
-    ASM = st.text_input("Input Nilai ASM")
+    ASM = st.text_input("Input Nilai ASM",0)
 with col1:
-    Homogeneity = st.text_input("Input Nilai Homogeneity")
+    Homogeneity = st.text_input("Input Nilai Homogeneity",0)
 with col2:
-    Dissimilarity = st.text_input("Input Nilai Dissimilarity")
+    Dissimilarity = st.text_input("Input Nilai Dissimilarity",0)
 with col3:
-    Correlation = st.text_input("Input Nilai Correlation")
+    Correlation = st.text_input("Input Nilai Correlation",0)
 with col1:
-    Coarseness = st.text_input("Input Nilai Coarseness")
+    Coarseness = st.text_input("Input Nilai Coarseness",0)
 submit = st.button('Submit')
 
 completeData = np.array([Mean, Variance, Standard_Deviation, Entropy, Skewness, Kurtosis, Contrast, Energy, ASM, Homogeneity, Dissimilarity, Correlation, Coarseness ]).reshape(1, -1)
