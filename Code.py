@@ -37,29 +37,29 @@ col1, col2, col3 = st.columns(3)
 with col1:
     Mean = st.text_input("Input Nilai Mean",0)
 with col2:
-    Variance = st.text_input("Input Nilai Variance",0)
-with col3:
-    Standard_Deviation = st.text_input("Input Nilai Standard Deviation",0)
-with col1:
-    Entropy = st.text_input("Input Nilai Entropy",0)
-with col2:
-    Skewness = st.text_input("Input Nilai Skewness",0)
-with col3:
     Kurtosis = st.text_input("Input Nilai Kurtosis",0)
+with col3:
+    Homogeneity = st.text_input("Input Nilai Homogeneity",0)
 with col1:
+    Variance = st.text_input("Input Nilai Variance",0)
+with col2:
     Contrast = st.text_input("Input Nilai Contrast",0)
+with col3:
+    Dissimilarity = st.text_input("Input Nilai Dissimilarity",0)
+with col1:
+    Standard_Deviation = st.text_input("Input Nilai Standard Deviation",0)
 with col2:
     Energy = st.text_input("Input Nilai Energy",0)
 with col3:
-    ASM = st.text_input("Input Nilai ASM",0)
-with col1:
-    Homogeneity = st.text_input("Input Nilai Homogeneity",0)
-with col2:
-    Dissimilarity = st.text_input("Input Nilai Dissimilarity",0)
-with col3:
     Correlation = st.text_input("Input Nilai Correlation",0)
 with col1:
+    Entropy = st.text_input("Input Nilai Entropy",0)
+with col2:
+    ASM = st.text_input("Input Nilai ASM",0)
+with col3:
     Coarseness = st.text_input("Input Nilai Coarseness",0)
+with col1:
+    Skewness = st.text_input("Input Nilai Skewness",0)
 submit = st.button('Submit')
 
 completeData = np.array([Mean, Variance, Standard_Deviation, Entropy, Skewness, Kurtosis, Contrast, Energy, ASM, Homogeneity, Dissimilarity, Correlation, Coarseness ]).reshape(1, -1)
